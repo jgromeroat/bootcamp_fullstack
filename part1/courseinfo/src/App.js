@@ -12,12 +12,12 @@ const App = () => {
   const part3 = 'State of a component'
   const exercises3 = 14
 
+  const listadoPartes = [{parte : part1, ejercicio : exercises1}, {parte : part2, ejercicio : exercises2}, {parte : part3, ejercicio : exercises3}]
+
   return (
     <div>
     <Header curso = {course}/>
-    <Content parte = {part1} ejecicio = {exercises1} />
-    <Content parte = {part2} ejecicio = {exercises2} />
-    <Content parte = {part3} ejecicio = {exercises3} />
+    <Content listadoPartes = {listadoPartes} />
     <Total numero =  {exercises1 + exercises2 + exercises3} />
     </div>
   )

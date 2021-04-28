@@ -1,9 +1,8 @@
-const Content = ({parte}, {ejercicio}) => {
+import Part  from './Part'
+const Content = ({listadoPartes}) => {
     
     return (
-        <p>
-            {parte} {ejercicio}
-      </p>
+        listadoPartes.map (listadoPartes =>  (<Part parte = {listadoPartes.parte} ejercicio = {listadoPartes.ejecicios}/>)) 
     )
     
 }
