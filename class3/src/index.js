@@ -1,6 +1,10 @@
 import reactDom from 'react-dom';
 import {useState} from 'react'
 
+const Counter = ({ number })=>{
+  return <h1>{number}</h1>
+}
+
 const App = (props) =>{
    
   const [contador, setContador] =  useState(0)
@@ -19,7 +23,7 @@ const App = (props) =>{
   return (
     <div>
       <p>El valor del contador es: </p>
-      <h1>{contador}</h1>
+     <Counter number ={contador}/>
       <p>{mensaje}</p>
       <button onClick = {handleClick}>
         Incrementar
